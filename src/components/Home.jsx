@@ -28,7 +28,7 @@ const Home = () => {
       >
         <h1 className="text-4xl md:text-6xl font-bold">Neha Dhirendra Sirur</h1>
         <p className="mt-4 text-lg md:text-2xl text-gray-300">
-          Full Stack Developer | AI-ML Enthusiast | Budding Researcher
+          Full Stack Web Developer | AI-ML Enthusiast | Budding Researcher
         </p>
 
         <div className="mt-6 flex justify-center md:justify-start gap-4">
