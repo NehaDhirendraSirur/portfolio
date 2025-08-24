@@ -59,7 +59,7 @@ const Contact = () => {
         transition={{ delay: 0.2, duration: 0.6 }}
       >
         <motion.a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="www.linkedin.com/in/neha-sirur"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
@@ -70,7 +70,7 @@ const Contact = () => {
         </motion.a>
 
         <motion.a
-          href="https://github.com/your-github"
+          href="https://github.com/NehaDhirendraSirur"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -81,7 +81,7 @@ const Contact = () => {
         </motion.a>
 
         <motion.a
-          href="https://scholar.google.com/citations?user=your-id"
+          href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AOv-ny-1zEMdjkSU9Yr8h5nPje_XlgVmZzvqVUH8vD5arPOuqetwJZIbjkHWW-9pDmHI5hFaljikwzYwCJmq22uOql1rafz8jX5F3xETAmA&user=7obJF9UAAAAJ"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Google Scholar"
