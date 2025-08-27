@@ -1,4 +1,5 @@
 // Publications.jsx
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { X, ExternalLink, Award } from "lucide-react";
 
@@ -112,17 +113,37 @@ export default function Publications() {
       id="publications"
       className="scroll-mt-24 pt-28 pb-20 px-6 bg-gradient-to-b from-[#0E1F33] via-[#152A45] to-[#0B1627] text-white"
     >
-      <div className="max-w-7xl mx-auto">
+  <div className="max-w-7xl mx-auto relative">
+
+        {/* Info Note with Tooltip */}
+        <div className="absolute right-0 top-0 mt-0 mr-2 -translate-y-8 z-10">
+          <div className="group relative inline-block">
+            <span className="font-semibold bg-blue-900/90 text-blue-100 rounded-full w-7 h-7 flex items-center justify-center text-base cursor-pointer shadow hover:bg-blue-800 transition" tabIndex={0}>
+              i
+            </span>
+            <div className="opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto transition-opacity duration-200 absolute right-0 mt-2 w-64 bg-blue-900/95 text-blue-100 px-4 py-2 rounded-lg shadow text-xs md:text-sm text-right" style={{ minWidth: '220px' }}>
+              For more information about a publication, click on its card to view more details.
+            </div>
+          </div>
+        </div>
+
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">
           Publications
         </h1>
 
         {/* Cards */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {publications.map((p) => (
-            <button
+          {publications.map((p, i) => (
+            <motion.button
               key={p.id}
               onClick={() => setActive(p)}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.15 }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.3)",
+              }}
               className="
                 flex flex-col justify-between
                 text-left p-5 rounded-2xl w-full h-full min-h-[220px]
@@ -141,7 +162,7 @@ export default function Publications() {
               <div className="mt-3 text-sm text-blue-200">
                 {yearLabel(p.year)} · {p.venue}
               </div>
-            </button>
+            </motion.button>
           ))}
         </div>
 
