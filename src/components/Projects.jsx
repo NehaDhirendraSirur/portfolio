@@ -4,25 +4,32 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "An Improved Explainable AI Model for Plant Disease Detection",
+    title: "Explainable AI Model for Plant Disease Detection",
     description:
       "This project explores the integration of Explainable Artificial Intelligence (XAI) and Federated Learning to enhance the transparency, privacy, and accuracy of plant disease detection models.",
     tech: ["Python", "Pytorch", "Federated Learning framework (FedAvg)", "XAI Libraries: LIME", "Matplotlib for visualization"],
     github: "https://github.com/NehaDhirendraSirur/XAI_with_Federated_Learning",
   },
   {
-    title: "Multimodal Learning Research",
+    title: "Generative AI for Inter-instrumental Synthesis of Indian Classical Music",
     description:
       "Implemented joint image-text representation learning for classification and retrieval tasks.",
     tech: ["Python", "TensorFlow", "PyTorch"],
-    github: "https://github.com/yourusername/multimodal-research",
+    github: "https://github.com/NehaDhirendraSirur/GenAI_for_IndianClassicalMusic",
   },
   {
-    title: "Portfolio Website",
-    description:
-      "Personal portfolio showcasing projects, certificates, and experiences with smooth UI/UX.",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/NehaDhirendraSirur/Multilingual_Text_Classification",
+  title: "Multilingual Text Classification using IndicCorp dataset",
+  description:
+    "This project presents a Multilingual Text Classification System using IndicCorp, a monolingual dataset with 11 Indic languages. The methodology integrates CountVectorizer for feature extraction and Multinomial Naïve Bayes for classification, achieving 73.37% accuracy.",
+  tech: ["Python", "scikit-learn", "pandas", "NumPy", "matplotlib"],
+  github: "https://github.com/NehaDhirendraSirur/Multilingual_Text_Classification",
+  },
+  {
+  title: "Big Data Analytics on NFL Big Data Bowl 2025",
+  description:
+    "Analyzed the NFL Big Data Bowl 2025 Kaggle dataset to uncover insights on quarterback performance, passing yards, receiver contributions, and team statistics. Leveraged Alteryx for ETL workflows and Hadoop MapReduce in Java for distributed data processing.",
+  tech: ["Alteryx", "Hadoop MapReduce", "Java", "Big Data Analytics"],
+  github: "https://github.com/NehaDhirendraSirur/NFLBowl_BigData",
   },
   {
     title: "Portfolio Website",

@@ -1,0 +1,81 @@
+[
+  {
+    id: 1,
+    title:
+      "Explorative Analysis for Predicting Direct and Indirect Affected Population due to Alcohol Abuse in Karnataka using Machine Learning Techniques",
+    authors:
+      "Neha Dhirendra Sirur, Shreyas S. Airani, Amogh R. Mangalvedi, Nischay N. Sheshadry, P. G. Sunitha Hiremath, Tulasa A. Badagi",
+    year: "2024-09-13",
+    venue:
+      "Advancements in Communication and Systems · International Conference on Data Science and Applications 2024, MNIT Jaipur",
+    summary:
+      "Analyzed 2017–2022 data on alcohol sales, consumption, and treatment centers in Karnataka. Linear Regression achieved 96% accuracy (direct) and 94% (indirect). Highlights a large treatment gap and need for expanded rehab services.",
+    pdf: "https://www.publications.scrs.in/chapter/978-81-955020-7-3/49",
+    certificate: "/conf_certificate1.jpg",
+  },
+  {
+    id: 2,
+    title: "An Improved Explainable AI Model for Plant Disease Detection",
+    authors:
+      "Neha Dhirendra Sirur, Risheek V. Hiremath, B. V. M. Sindhu, H. Gouri Arun Kumar, Priyadarshini Patil",
+    year: "2025-06-22",
+    venue:
+      "Lecture Notes in Networks and Systems (LNNS, vol. 1264) · International Conference on Data Science and Applications 2024, MNIT Jaipur",
+    summary:
+      "Custom CNN baseline (1530 samples) enhanced via Federated Learning (FedAvg) improved accuracy from 91.3% → 96.6%. XAI methods added to increase interpretability and trust in agricultural disease detection.",
+    pdf: "https://link.springer.com/chapter/10.1007/978-981-96-2179-8_7",
+    certificate: "/conf_certificate2.jpg",
+  },
+  {
+    id: 3,
+    title: "An Efficient Multilingual Text Classification using IndicCorp dataset",
+    authors:
+      "Lalitha Madanbhavi, Padmashree Desai, Neha Dhirendra Sirur, Ananya Deshpande, Risheek V Hiremath, Chetan M Patil",
+    year: "2025-03-20",
+    venue:
+      "2024 5th IEEE Global Conference for Advancement in Technology (GCAT), Nagarjuna College Of Engineering & Technology, Bangalore.",
+    summary:
+      "This paper introduces a language detection system using Multinomial Naive Bayes on the IndicCorp dataset, achieving 73.37% accuracy across multiple Indian languages. The study highlights its effectiveness for multilingual NLP tasks like translation and sentiment analysis.",
+    pdf: "https://ieeexplore.ieee.org/document/10923964",
+    certificate: "/conf_certificate3.jpg",
+  },
+  {
+    id: 4,
+    title: "Musical Alchemy: Generative AI for Inter-instrumental Synthesis",
+    authors:
+      "Neha Dhirendra Sirur, Shreyas Airani, Amogh R. Mangalvedi ",
+    year: "2025-07-27",
+    venue:
+      "Lecture Notes in Networks and Systems (LNNS, vol. 1304) · International Conference on Advances in Data-driven Computing and Intelligent Systems 2024,",
+    summary:
+      "This work presents an LSTM-based music generation system trained on custom piano MIDI datasets, achieving 91.32% accuracy with low loss. Results show high novelty and generally positive listener feedback, highlighting AI’s potential for creative music composition.",
+    pdf: "https://link.springer.com/chapter/10.1007/978-981-96-3652-5_33",
+    certificate: "/conf_certificate4.jpg",
+  },
+  {
+  id: 5,
+    title: "Strategies for Detecting Counterfeit Products in the Global Food Supply Chain",
+    authors:
+      "Neha Dhirendra Sirur, Uma Hiremath, Srajana Naik, Vats Mishra",
+    year: "2025-02-13",
+    venue:
+      "2024 4th International Conference on Ubiquitous Computing and Intelligent Information Systems (ICUIS), Shree Venkateshwara Hi-Tech Engineering College, Gobichettipalayam, Tamil Nadu.",
+    summary:
+      "This research introduces a blockchain-based anti-counterfeit system for the food supply chain, using smart contracts, role-based access, and QR code integration for secure, tamper-proof traceability. The decentralized application ensures transparency, real-time verification, and protection against counterfeit products.",
+    pdf: "https://ieeexplore.ieee.org/document/10923964",
+    certificate: "/conf_certificate5.jpg",
+  },
+  {
+  id: 5,
+    title: "Enhancing Classification with Joint Representation Learning on Multimodal Data",
+    authors:
+      "Neha Dhirendra Sirur, Padmashree Desai, Sujatha C, Uma Mudengudi, Ramesh Ashok Tabib",
+    year: "2025",
+    venue:
+      "5th International Conference on Computer Vision and Robotics (CVR 2025), National Institute of Technology Goa",
+    summary:
+      "This research introduces MRVAE, a variational autoencoder-based framework that fuses image and text embeddings into a probabilistic latent space for improved multimodal representation. It outperforms deterministic models like MRAE and MMEDA-I in book rating classification, achieving 97.85% accuracy.",
+    pdf: "Yet to be published",
+    certificate: "/conf_certificate6.jpg",
+  },
+];
