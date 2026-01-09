@@ -67,7 +67,7 @@ const publications = [
       "2024 4th International Conference on Ubiquitous Computing and Intelligent Information Systems (ICUIS), Shree Venkateshwara Hi-Tech Engineering College, Gobichettipalayam, Tamil Nadu.",
     summary:
       "This research introduces a blockchain-based anti-counterfeit system for the food supply chain, using smart contracts, role-based access, and QR code integration for secure, tamper-proof traceability. The decentralized application ensures transparency, real-time verification, and protection against counterfeit products.",
-    pdf: "https://ieeexplore.ieee.org/document/10923964",
+    pdf: "https://ieeexplore.ieee.org/abstract/document/10866916",
     certificate: "/conf_certificate5.jpg",
   },
   {
