@@ -1,7 +1,7 @@
 // src/common/Navbar.jsx
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Star, Menu, X } from "lucide-react";
+import { Star, Menu, X, FileText } from "lucide-react";
 
 const Navbar = () => {
   const [scrollUp, setScrollUp] = useState(true);
@@ -24,7 +24,7 @@ const Navbar = () => {
       const currentY = window.scrollY;
       setScrollUp(currentY < lastScrollY);
       setLastScrollY(currentY);
-      setMobileOpen(false); // close mobile menu on scroll
+      setMobileOpen(false); 
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -47,21 +47,34 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden sm:flex space-x-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`text-gray-200 hover:text-blue-300 font-medium transition ${
-                location.pathname === link.path
-                  ? "text-blue-300 font-semibold"
-                  : ""
-              }`}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </div>
+        <div className="hidden sm:flex items-center space-x-6">
+        {navLinks.map((link) => (
+          <Link
+            key={link.path}
+            to={link.path}
+            className={`text-gray-200 hover:text-blue-300 font-medium transition ${
+              location.pathname === link.path
+                ? "text-blue-300 font-semibold"
+                : ""
+            }`}
+          >
+            {link.name}
+          </Link>
+        ))}
+
+        {/* Resume icon (desktop only) */}
+        <a
+          href="/NehaSirur_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Download Resume"
+          title="Download Resume"
+          className="text-gray-200 hover:text-red-400 transition-colors"
+        >
+          <FileText size={20} />
+        </a>
+      </div>
+
 
         {/* Mobile Hamburger */}
         <button

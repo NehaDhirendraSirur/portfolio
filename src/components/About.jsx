@@ -20,7 +20,7 @@ const About = () => {
 
         {/* Card container */}
         <motion.div
-          className="bg-[#1A2B42]/80 backdrop-blur-lg rounded-2xl shadow-xl p-8 md:p-12 leading-relaxed text-lg"
+          className="bg-[#1A2B42]/80 backdrop-blur-lg rounded-2xl shadow-xl p-8 md:p-12 leading-relaxed text-lg text-justify"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
