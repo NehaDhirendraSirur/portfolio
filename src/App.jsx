@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./common/Navbar";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
@@ -10,7 +10,7 @@ import Experience from "./components/Experience";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/portfolio">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/publications" element={<Publications />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 

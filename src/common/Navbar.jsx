@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Star, Menu, X, FileText } from "lucide-react";
+import resumePDF from "../assets/NehaSirur_Resume.pdf";
+
 
 const Navbar = () => {
   const [scrollUp, setScrollUp] = useState(true);
@@ -64,15 +66,16 @@ const Navbar = () => {
 
         {/* Resume icon (desktop only) */}
         <a
-          href="/NehaSirur_Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Download Resume"
-          title="Download Resume"
-          className="text-gray-200 hover:text-red-400 transition-colors"
-        >
-          <FileText size={20} />
-        </a>
+        href={resumePDF}             
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Download Resume"
+        title="Download Resume"
+        className="text-gray-200 hover:text-red-400 transition-colors"
+      >
+        <FileText size={20} />
+      </a>
+
       </div>
 
 

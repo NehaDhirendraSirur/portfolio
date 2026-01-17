@@ -1,11 +1,10 @@
 // src/components/Contact.jsx
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaFilePdf } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
 import { SiOrcid, SiKaggle, SiDiscord } from "react-icons/si";
-import { FaAward } from "react-icons/fa";
-import { FaFilePdf } from "react-icons/fa";
+import resumePDF from "../assets/NehaSirur_Resume.pdf";
 
 
 
@@ -43,7 +42,7 @@ const Contact = () => {
 
       {/* Resume icon */}
       <motion.a
-        href="/NehaSirur_Resume.pdf"
+        href={resumePDF}             
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Download Resume"
@@ -53,6 +52,7 @@ const Contact = () => {
       >
         <FaFilePdf />
       </motion.a>
+
     </div>
 
 

@@ -2,6 +2,13 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { X, ExternalLink, Award } from "lucide-react";
+import cert1 from "../assets/conf_certificate1.jpg";
+import cert2 from "../assets/conf_certificate2.jpg";
+import cert3 from "../assets/conf_certificate3.jpg";
+import cert4 from "../assets/conf_certificate4.jpg";
+import cert5 from "../assets/conf_certificate5.jpg";
+import cert6 from "../assets/conf_certificate6.jpg";
+
 
 const publications = [
   {
@@ -16,7 +23,7 @@ const publications = [
     summary:
       "Analyzed 2017–2022 data on alcohol sales, consumption, and treatment centers in Karnataka. Linear Regression achieved 96% accuracy (direct) and 94% (indirect). Highlights a large treatment gap and need for expanded rehab services.",
     pdf: "https://www.publications.scrs.in/chapter/978-81-955020-7-3/49",
-    certificate: "/conf_certificate1.jpg",
+    certificate: cert1,
   },
   {
     id: 2,
@@ -29,7 +36,7 @@ const publications = [
     summary:
       "Custom CNN baseline (1530 samples) enhanced via Federated Learning (FedAvg) improved accuracy from 91.3% → 96.6%. XAI methods added to increase interpretability and trust in agricultural disease detection.",
     pdf: "https://link.springer.com/chapter/10.1007/978-981-96-2179-8_7",
-    certificate: "/conf_certificate2.jpg",
+    certificate: cert2,
   },
   {
     id: 3,
@@ -42,7 +49,7 @@ const publications = [
     summary:
       "This paper introduces a language detection system using Multinomial Naive Bayes on the IndicCorp dataset, achieving 73.37% accuracy across multiple Indian languages. The study highlights its effectiveness for multilingual NLP tasks like translation and sentiment analysis.",
     pdf: "https://ieeexplore.ieee.org/document/10923964",
-    certificate: "/conf_certificate3.jpg",
+    certificate: cert3,
   },
   {
     id: 4,
@@ -55,7 +62,7 @@ const publications = [
     summary:
       "This work presents an LSTM-based music generation system trained on custom piano MIDI datasets, achieving 91.32% accuracy with low loss. Results show high novelty and generally positive listener feedback, highlighting AI’s potential for creative music composition.",
     pdf: "https://link.springer.com/chapter/10.1007/978-981-96-3652-5_33",
-    certificate: "/conf_certificate4.jpg",
+    certificate: cert4,
   },
   {
   id: 5,
@@ -68,7 +75,7 @@ const publications = [
     summary:
       "This research introduces a blockchain-based anti-counterfeit system for the food supply chain, using smart contracts, role-based access, and QR code integration for secure, tamper-proof traceability. The decentralized application ensures transparency, real-time verification, and protection against counterfeit products.",
     pdf: "https://ieeexplore.ieee.org/abstract/document/10866916",
-    certificate: "/conf_certificate5.jpg",
+    certificate: cert5,
   },
   {
   id: 5,
@@ -81,7 +88,7 @@ const publications = [
     summary:
       "This research introduces MRVAE, a variational autoencoder-based framework that fuses image and text embeddings into a probabilistic latent space for improved multimodal representation. It outperforms deterministic models like MRAE and MMEDA-I in book rating classification, achieving 97.85% accuracy.",
     pdf: "Yet to be published",
-    certificate: "/conf_certificate6.jpg",
+    certificate: cert6,
   },
 ];
 
