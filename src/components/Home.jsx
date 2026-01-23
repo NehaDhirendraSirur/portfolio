@@ -1,6 +1,8 @@
 // src/components/Home.jsx
 import { motion } from "framer-motion";
 import profileImg from "../assets/img1.jpg"; 
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
   return (
@@ -14,7 +16,7 @@ const Home = () => {
         className="flex-shrink-0"
       >
         <img
-          src={profileImg}   // ✅ USE IMPORT
+          src={profileImg}   
           alt="Profile"
           className="w-60 h-60 md:w-72 md:h-72 rounded-full shadow-lg object-cover border-4 border-white"
         />
@@ -33,18 +35,18 @@ const Home = () => {
         </p>
 
         <div className="mt-6 flex justify-center md:justify-start gap-4">
-          <a
-            href="/about"
+          <Link
+            to="/about"
             className="px-6 py-2 rounded-2xl bg-white text-black font-medium hover:bg-gray-200 transition"
           >
             About Me
-          </a>
-          <a
-            href="/projects"
+          </Link>
+          <Link
+            to="/projects"
             className="px-6 py-2 rounded-2xl border border-white font-medium hover:bg-gray-700 transition"
           >
             My Projects
-          </a>
+          </Link>
         </div>
       </motion.div>
     </section>

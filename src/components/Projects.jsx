@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Generative AI for Inter-instrumental Synthesis of Indian Classical Music",
     description:
-      "Implemented joint image-text representation learning for classification and retrieval tasks.",
+      "The objective of the project is to develop a generative AI solution powered by LSTM-RNN to automatically convert classical piano tunes into harmonium renditions while retaining the unique characteristics of the instrument..",
     tech: ["Python", "TensorFlow", "PyTorch"],
     github: "https://github.com/NehaDhirendraSirur/GenAI_for_IndianClassicalMusic",
   },
@@ -32,11 +32,18 @@ const projects = [
   github: "https://github.com/NehaDhirendraSirur/NFLBowl_BigData",
   },
   {
+    title: "Crop Wellness Analyzer",
+    description:
+      "Developed a full-stack web application using React, Spring Boot, MySQL, and MongoDB to optimize crop productivity for small-scale farmers. Built a Crop Information System with a relational schema for plants, diseases, symptoms, and solutions. Integrated an ML-based disease detection API using Flask and Axios for real-time image analysis. Implemented a User Query System enabling farmers to raise issues and receive admin responses efficiently.",
+    tech: ["React", "Spring Boot", "MySQL", "MongoDB", "Flask", "Machine Learning"],
+    github: "https://github.com/NehaDhirendraSirur/Crop-Wellness-Analyzer",
+  },
+  {
     title: "Portfolio Website",
     description:
       "Personal portfolio showcasing projects, certificates, and experiences with smooth UI/UX.",
     tech: ["React", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/NehaDhirendraSirur/NFLBowl_BigData",
+    github: "https://github.com/NehaDhirendraSirur/portfolio",
   },
 ];
 

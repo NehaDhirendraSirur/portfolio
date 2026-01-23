@@ -41,12 +41,17 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
         
         {/* Logo */}
-        <div className="flex items-center space-x-2">
+        <Link
+          to="/"
+          className="flex items-center space-x-2"
+          aria-label="Go to Home"
+        >
           <Star className="w-5 h-5 text-yellow-400" />
           <h1 className="text-2xl font-bold italic text-white tracking-wide">
             NDS
           </h1>
-        </div>
+        </Link>
+
 
         {/* Desktop Navigation */}
         <div className="hidden sm:flex items-center space-x-6">

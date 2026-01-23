@@ -1,7 +1,7 @@
 // src/components/Contact.jsx
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaLinkedin, FaGithub, FaEnvelope, FaFilePdf } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaFilePdf, FaAward } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
 import { SiOrcid, SiKaggle, SiDiscord } from "react-icons/si";
 import resumePDF from "../assets/NehaSirur_Resume.pdf";
@@ -83,16 +83,16 @@ const Contact = () => {
         transition={{ delay: 0.2, duration: 0.6 }}
       >
 
-        <motion.a
-          href="www.linkedin.com/in/neha-sirur"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          whileHover={{ scale: 1.12, rotate: 4 }}
-          className="text-3xl sm:text-4xl text-white hover:text-blue-300 transition-colors"
-        >
-          <FaLinkedin />
-        </motion.a>
+      <motion.a
+        href="https://www.linkedin.com/in/neha-sirur"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        whileHover={{ scale: 1.12, rotate: 4 }}
+        className="text-3xl sm:text-4xl text-white hover:text-blue-300 transition-colors"
+      >
+        <FaLinkedin />
+      </motion.a>
 
         <motion.a
           href="https://github.com/NehaDhirendraSirur"
@@ -165,7 +165,7 @@ const Contact = () => {
       </motion.a> */}
 
 
-      <motion.div
+      {/* <motion.div
         aria-label="Discord"
         whileHover={{ scale: 1.12 }}
         className="text-3xl sm:text-4xl text-white hover:text-blue-300 transition-colors"
@@ -173,7 +173,20 @@ const Contact = () => {
         title="Discord: neha219961"
       >
         <SiDiscord />
-      </motion.div>
+      </motion.div> */}
+
+      <motion.a
+        href="https://www.credly.com/users/neha-sirur/badges#credly"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Credly Badges"
+        // title="View my Credly badges"
+        whileHover={{ scale: 1.12, rotate: -2 }}
+        className="text-3xl sm:text-4xl text-white hover:text-blue-300 transition-colors"
+      >
+      <FaAward />
+    </motion.a>
+
 
       </motion.div>
 

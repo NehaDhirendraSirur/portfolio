@@ -52,7 +52,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a192f] text-white px-6 py-16">
+    <div className="relative min-h-screen bg-[#0a192f] text-white px-6 py-16">
       <h2 className="text-4xl font-bold text-center mb-12">Experience</h2>
 
       <div className="relative max-w-6xl mx-auto">
