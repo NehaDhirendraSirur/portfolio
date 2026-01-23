@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 import { Star, Menu, X, FileText } from "lucide-react";
 import resumePDF from "../assets/NehaSirur_Resume.pdf";
 
-
 const Navbar = () => {
   const [scrollUp, setScrollUp] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -21,13 +20,29 @@ const Navbar = () => {
     { name: "Contact", path: "/contact" },
   ];
 
+  /* 🔹 RESET NAVBAR ON ROUTE CHANGE */
+  useEffect(() => {
+    setScrollUp(true);
+    setLastScrollY(window.scrollY);
+    setMobileOpen(false);
+  }, [location.pathname]);
+
+  /* 🔹 SCROLL HANDLER (DESKTOP ONLY) */
   useEffect(() => {
     const handleScroll = () => {
+      // Do not auto-hide navbar on mobile
+      if (window.innerWidth < 640) return;
+
       const currentY = window.scrollY;
+
+      // Small threshold to avoid flicker
+      if (Math.abs(currentY - lastScrollY) < 10) return;
+
       setScrollUp(currentY < lastScrollY);
       setLastScrollY(currentY);
-      setMobileOpen(false); 
+      setMobileOpen(false);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
@@ -52,37 +67,34 @@ const Navbar = () => {
           </h1>
         </Link>
 
-
         {/* Desktop Navigation */}
         <div className="hidden sm:flex items-center space-x-6">
-        {navLinks.map((link) => (
-          <Link
-            key={link.path}
-            to={link.path}
-            className={`text-gray-200 hover:text-blue-300 font-medium transition ${
-              location.pathname === link.path
-                ? "text-blue-300 font-semibold"
-                : ""
-            }`}
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              className={`text-gray-200 hover:text-blue-300 font-medium transition ${
+                location.pathname === link.path
+                  ? "text-blue-300 font-semibold"
+                  : ""
+              }`}
+            >
+              {link.name}
+            </Link>
+          ))}
+
+          {/* Resume icon */}
+          <a
+            href={resumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Resume"
+            title="Download Resume"
+            className="text-gray-200 hover:text-red-400 transition-colors"
           >
-            {link.name}
-          </Link>
-        ))}
-
-        {/* Resume icon (desktop only) */}
-        <a
-        href={resumePDF}             
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Download Resume"
-        title="Download Resume"
-        className="text-gray-200 hover:text-red-400 transition-colors"
-      >
-        <FileText size={20} />
-      </a>
-
-      </div>
-
+            <FileText size={20} />
+          </a>
+        </div>
 
         {/* Mobile Hamburger */}
         <button
