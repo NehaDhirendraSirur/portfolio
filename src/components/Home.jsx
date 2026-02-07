@@ -34,7 +34,7 @@ const Home = () => {
           Full Stack Web Developer | AI-ML Enthusiast | Budding Researcher
         </p>
 
-        <div className="mt-6 flex justify-center md:justify-start gap-4">
+        {/* <div className="mt-6 flex justify-center md:justify-start gap-4">
           <Link
             to="/about"
             className="px-6 py-2 rounded-2xl bg-white text-black font-medium hover:bg-gray-200 transition"
@@ -47,7 +47,7 @@ const Home = () => {
           >
             My Projects
           </Link>
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );

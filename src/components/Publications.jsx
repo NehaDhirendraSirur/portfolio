@@ -87,7 +87,7 @@ const publications = [
       "5th International Conference on Computer Vision and Robotics (CVR 2025), National Institute of Technology Goa",
     summary:
       "This research introduces MRVAE, a variational autoencoder-based framework that fuses image and text embeddings into a probabilistic latent space for improved multimodal representation. It outperforms deterministic models like MRAE and MMEDA-I in book rating classification, achieving 97.85% accuracy.",
-    pdf: "Yet to be published",
+    pdf: "https://link.springer.com/chapter/10.1007/978-3-032-14038-8_33",
     certificate: cert6,
   },
 ];
@@ -181,7 +181,11 @@ export default function Publications() {
               onClick={() => setActive(null)}
             />
             <div className="relative z-10 w-[92%] max-w-2xl">
-              <div className="rounded-2xl bg-white text-gray-900 shadow-2xl overflow-hidden">
+              <div className="rounded-2xl 
+                  bg-gradient-to-br from-white via-slate-50 to-slate-100 
+                      text-gray-900 shadow-[0_25px_80px_rgba(0,0,0,0.45)] 
+                      overflow-hidden border border-gray-200">
+
                 <div className="p-6 md:p-7">
                   <div className="flex items-start justify-between gap-6">
                     <h3 className="text-xl md:text-2xl font-bold leading-snug">
@@ -220,7 +224,10 @@ export default function Publications() {
                         href={active.pdf}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#1A2B42] text-white hover:bg-[#203552] transition shadow-sm"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl 
+                                    bg-white text-[#1A2B42] 
+                                    border border-[#1A2B42]/20
+                                    hover:bg-slate-50 hover:scale-[1.03] transition shadow-sm"
                       >
                         <ExternalLink size={18} />
                         View PDF / DOI
@@ -229,7 +236,11 @@ export default function Publications() {
                     {active.certificate && (
                       <button
                         onClick={() => setShowCert(true)}
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-[#1A2B42] ring-1 ring-[#1A2B42]/20 hover:bg-gray-50 transition"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl 
+                                    bg-white text-[#1A2B42] 
+                                    border border-[#1A2B42]/20
+                                    hover:bg-slate-50 hover:scale-[1.03] transition shadow-sm"
+
                       >
                         <Award size={18} />
                         Certificate
@@ -249,7 +260,11 @@ export default function Publications() {
               className="absolute inset-0 bg-black/70 backdrop-blur-sm"
               onClick={() => setShowCert(false)}
             />
-            <div className="relative z-10 max-w-4xl w-[90%] bg-white rounded-xl p-4 shadow-lg">
+            <div className="relative z-10 max-w-4xl w-[90%] 
+                bg-gradient-to-br from-white to-slate-100 
+                rounded-2xl p-5 
+                shadow-[0_25px_80px_rgba(0,0,0,0.5)] border border-gray-200">
+
               <div className="flex justify-between items-center mb-4">
                 <h2 className="font-semibold text-lg">Certificate</h2>
                 <button

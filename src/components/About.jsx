@@ -37,7 +37,7 @@ const About = () => {
             </span>
             . I began my journey at Allstate as an intern, and was later
             converted to a full-time role, where I work on full-stack
-            development—building scalable backend systems with{" "}
+            development - building scalable backend systems with{" "}
             <span className="font-medium text-blue-300">Java & Spring Boot</span>{" "}
             and designing dynamic, user-friendly frontends with{" "}
             <span className="font-medium text-blue-300">React</span>.
@@ -50,9 +50,9 @@ const About = () => {
             technical depth with practical applications. I also have a strong
             interest in research, with{" "}
             <span className="font-semibold text-blue-300">
-              five publications
+              six international publications
             </span>{" "}
-            already completed and one more in progress, exploring areas such as{" "}
+            to my credit, exploring areas such as{" "}
             <span className="italic">explainable AI, generative models,</span>{" "}
             and <span className="italic">data-driven applications</span>.
           </p>

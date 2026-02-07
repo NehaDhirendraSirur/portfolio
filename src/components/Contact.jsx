@@ -40,7 +40,7 @@ const Contact = () => {
         Let’s Connect
       </motion.h2>
 
-      {/* Resume icon */}
+      {/* Resume icon
       <motion.a
         href={resumePDF}             
         target="_blank"
@@ -51,7 +51,7 @@ const Contact = () => {
         className="text-2xl md:text-3xl text-white hover:text-red-400 transition-colors"
       >
         <FaFilePdf />
-      </motion.a>
+      </motion.a> */}
 
     </div>
 
@@ -119,7 +119,7 @@ const Contact = () => {
         </motion.a>
 
         <motion.a
-          href="mailto:xyz@gmail.com"
+          href="mailto:sirurneha@gmail.com"
           aria-label="Email"
           whileHover={{ scale: 1.12, rotate: 2 }}
           className="text-3xl sm:text-4xl text-white hover:text-blue-300 transition-colors"
@@ -193,13 +193,44 @@ const Contact = () => {
       
 
       {/* Optional CTA button */}
-      <motion.a
+      {/* <motion.a
         href="mailto:sirurneha@gmail.com"
         className="mt-12 inline-block bg-white text-[#0f172a] px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-2xl transition"
         whileHover={{ scale: 1.03 }}
       >
         Drop me a message
-      </motion.a>
+      </motion.a> */}
+
+        {/* CTA Buttons */}
+<div
+  className="
+    mt-12
+    flex flex-col gap-4
+    sm:flex-row sm:gap-6
+    items-center justify-center
+  "
+>
+  {/* Message Button */}
+  <motion.a
+    href="mailto:sirurneha@gmail.com"
+    className="bg-transparent border border-white text-white px-6 py-3 rounded-full font-medium shadow-lg hover:bg-white hover:text-[#0f172a] transition"
+    whileHover={{ scale: 1.03 }}
+  >
+    Drop me a message
+  </motion.a>
+
+  {/* Download Resume Button */}
+  <motion.a
+    href={resumePDF}
+    download="NehaSirur_Resume.pdf"
+    className="bg-transparent border border-white text-white px-6 py-3 rounded-full font-medium shadow-lg hover:bg-white hover:text-[#0f172a] transition"
+    whileHover={{ scale: 1.03 }}
+  >
+    Download my resume
+  </motion.a>
+</div>
+
+
     </section>
   );
 };
