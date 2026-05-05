@@ -46,7 +46,7 @@ const domains = [
       { label: "HTML & CSS",  level: 85 },
       { label: "Node.js",     level: 65 },
       { label: "REST APIs",   level: 85 },
-      { label: "Tailwind CSS",level: 80 },
+      { label: "Next.js",     level: 55 },
     ],
   },
   {

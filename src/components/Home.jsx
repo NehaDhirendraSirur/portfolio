@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import profileImg from "../assets/img2.jpeg";
 
 const roles = [
-  "Full Stack Developer",
+  "Full Stack Web Developer",
   "AI / ML Enthusiast",
   "Budding Researcher",
   "Software Engineer",

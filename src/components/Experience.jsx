@@ -4,20 +4,21 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 const experiences = [
-  {
-    role: "Software Engineer Analyst",
-    company: "Allstate India",
-    duration: "July 2025 – Present",
-    summary: "Full-stack development with Java, Spring Boot & React. Building REST APIs, contributing to Agile sprints, and exploring AI-based POCs.",
-    tags: ["Java", "Spring Boot", "React", "REST APIs", "Agile"],
-    description: [
-      "Working on application development and enhancements using Java, Spring Boot, and React.",
-      "Assisting in building and testing REST APIs, using Postman for validation and debugging.",
-      "Using Git/GitHub for version control, code reviews, and collaborative development.",
-      "Supporting feature implementation, bug fixes, and code refactoring under guidance of senior engineers.",
-      "Developing and experimenting with proof-of-concepts (POCs), including AI-based explorations, to understand feasibility and application impact.",
-      "Following Agile practices, contributing to sprint tasks, discussions, and incremental delivery.",
-    ],
+{
+  role: "Software Engineer Analyst",
+  company: "Allstate India",
+  duration: "July 2025 – Present",
+  summary: "Full-stack development with Java, Spring Boot & React; building scalable systems, APIs, and improving reliability with zero major production incidents.",
+  tags: ["Java", "Spring Boot", "React", "REST APIs", "Playwright", "Datadog", "JMeter", "Agile"],
+  description: [
+    "Built and enhanced full-stack features using Java, Spring Boot, and React for insurance quoting platforms, contributing to zero major production incidents in 2025.",
+    "Designed, tested, and validated RESTful APIs using Postman; managed Git workflows including branching, code reviews, and deployments across Dev, Integration, Staging, and Production environments.",
+    "Delivered end-to-end onboarding of 9+ insurance carriers, handling configuration, market list updates, SFTP validation, and cross-environment production sign-off.",
+    "Managed security and infrastructure operations including SSL/TLS certificate renewals, secret rotations, URL whitelisting, and database credential management, ensuring 99.9% successful release rate.",
+    "Developed Playwright automation scripts for end-to-end UI testing, improving coverage and reducing manual testing effort; conducted performance testing using JMeter.",
+    "Monitored and debugged production systems using Datadog, improving observability and enabling faster incident detection and resolution.",
+    "Collaborated in Agile sprints, contributing to feature delivery, cross-team discussions, and POCs including an ML-based vehicle damage detection model.",
+  ],
   },
   {
     role: "Apprentice Associate",
@@ -76,13 +77,10 @@ export default function Experience() {
         Experience
       </motion.h2>
 
-      {/* Constrained centered container */}
       <div className="max-w-2xl mx-auto">
-
-        {/* Timeline wrapper — line runs through left gutter */}
         <div className="relative">
 
-          {/* Vertical line — positioned in the dot column */}
+          {/* Vertical line */}
           <div
             className="absolute left-[7px] top-2 bottom-2 w-0.5 hidden sm:block"
             style={{ backgroundColor: "#1D4ED8" }}
@@ -98,7 +96,7 @@ export default function Experience() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
               >
-                {/* Dot column — desktop only */}
+                {/* Dot */}
                 <div className="hidden sm:flex flex-col items-center pt-5 shrink-0">
                   <div
                     className="w-3.5 h-3.5 rounded-full border-2 z-10 transition-all duration-300"
@@ -123,7 +121,6 @@ export default function Experience() {
                     className="w-full text-left px-5 py-5 flex items-start justify-between gap-4"
                   >
                     <div className="flex-1 min-w-0">
-                      {/* Role + company */}
                       <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-1">
                         <h3 className="text-base md:text-lg font-semibold text-white leading-snug">
                           {exp.role}
@@ -132,16 +129,8 @@ export default function Experience() {
                           · {exp.company}
                         </span>
                       </div>
-
-                      {/* Duration */}
                       <p className="text-xs text-gray-400 mb-3">{exp.duration}</p>
-
-                      {/* Summary */}
-                      <p className="text-sm text-gray-300 leading-relaxed">
-                        {exp.summary}
-                      </p>
-
-                      {/* Tags */}
+                      <p className="text-sm text-gray-300 leading-relaxed">{exp.summary}</p>
                       <div className="flex flex-wrap gap-1.5 mt-3">
                         {exp.tags.map((tag) => (
                           <span

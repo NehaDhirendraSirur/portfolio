@@ -7,7 +7,7 @@ const education = [
     institution: "KLE Technological University",
     location: "Hubballi, Karnataka",
     year: "2021 – 2025",
-    score: "CGPA: 9.31",
+    score: "9.31",
     scoreColor: "#60A5FA",
     scoreBg: "rgba(96,165,250,0.12)",
     scoreBorder: "rgba(96,165,250,0.25)",
@@ -23,7 +23,7 @@ const education = [
     scoreBorder: "rgba(52,211,153,0.25)",
   },
   {
-    degree: "Class X (SSLC)",
+    degree: "Class X (CBSE)",
     institution: "Smt. Vimala Kulkarni Memorial School",
     location: "Hubballi, Karnataka",
     year: "2019",
