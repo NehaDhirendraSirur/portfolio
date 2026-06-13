@@ -77,7 +77,7 @@ const domains = [
     domain: "Databases",
     color: "#A78BFA",
     skills: [
-      { label: "MySQL / PostgreSQL", level: 80 },
+      { label: "PostgreSQL", level: 80 },
       { label: "MongoDB",            level: 75 },
       { label: "Oracle DB",          level: 80 },
     ],

@@ -83,7 +83,7 @@ const About = () => {
               I enjoy working at the intersection of{" "}
               <span className="font-medium">software engineering and AI</span>,
               with hands-on experience in creating solutions that balance
-              technical depth with practical applications. I also have a strong
+              technical depth with practical applications. I also have a keen
               interest in research, with{" "}
               <span className="font-semibold text-blue-300">
                 six international publications
@@ -94,10 +94,10 @@ const About = () => {
 
             <p>
               With a foundation in both development and research, I bring a
-              problem-solving mindset, strong teamwork skills, and the drive to
-              deliver solutions that are both innovative and impactful. I'm
-              always eager to learn, adapt, and grow while contributing
-              meaningfully to the tech ecosystem.
+              problem-solving mindset and the ability to work well in a team,
+              along with the drive to deliver solutions that are both
+              innovative and impactful. I'm always eager to learn, adapt, and
+              grow while contributing meaningfully to the tech ecosystem.
             </p>
           </div>
 

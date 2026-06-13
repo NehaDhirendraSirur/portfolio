@@ -8,7 +8,7 @@ import resumePDF from "../assets/NehaSirur_Resume.pdf";
 const messages = [
   "Got a project idea or research problem in mind? I'd love to brainstorm and collaborate.",
   "Always curious to connect with like-minded professionals, researchers, and developers. Let's share ideas and grow together.",
-  "My inbox is always open—whether for opportunities, feedback, or just a tech chat."
+  "My inbox is always open - whether for opportunities, feedback, or just a tech chat."
 ];
 
 const Contact = () => {

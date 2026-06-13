@@ -63,7 +63,7 @@ const Navbar = () => {
         >
           <Star className="w-5 h-5 text-yellow-400" />
           <h1 className="text-2xl font-bold italic text-white tracking-wide">
-            NDS
+            Neha D Sirur
           </h1>
         </Link>
 
