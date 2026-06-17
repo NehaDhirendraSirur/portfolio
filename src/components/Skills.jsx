@@ -33,8 +33,9 @@ const domains = [
       { label: "Python",      level: 85 },
       { label: "Java",        level: 70 },
       { label: "JavaScript",  level: 75 },
-      { label: "C / C++",     level: 80 },
+      { label: "C++",     level: 80 },
       { label: "SQL",         level: 80 },
+      { label: "C",     level: 80 },
     ],
   },
   {
@@ -80,6 +81,7 @@ const domains = [
       { label: "PostgreSQL", level: 80 },
       { label: "MongoDB",            level: 75 },
       { label: "Oracle DB",          level: 80 },
+      { label: "Redis",          level: 70 },
     ],
   },
   {
@@ -88,8 +90,11 @@ const domains = [
     skills: [
       { label: "Git / GitHub",   level: 90 },
       { label: "Postman",        level: 90 },
-      // { label: "Agile / Scrum",  level: 75 },
+      { label: "Agile / Scrum",  level: 75 },
       { label: "Docker",         level: 50 },
+      { label: "Playwright",         level: 75 },
+      { label: "Datadog",         level: 70 },
+      { label: "Jmeter",         level: 55 },
       { label: "Kubernetes",     level: 50 },
       { label: "Hadoop / Big Data", level: 50 },
     ],
